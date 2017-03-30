@@ -66,10 +66,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -2px;
+
+}
+h1 {
+  font-size: 35px;
+  border-bottom: 2px solid white;
+  font-weight: normal;
+
 }
 .leftContent {
   width: 600px;
-
+  font-size: 20px;
+  color: black;
 }
 
 .rightContent {

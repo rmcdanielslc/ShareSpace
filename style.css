@@ -149,6 +149,8 @@ h1 {
   background-color: black;
   width: 1100px;
   min-width: 1000px;
+  height:500px;
+  background-image: url('images/body_bg.png');
 }
 .square1 {
   line-height: 250px;

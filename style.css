@@ -12,16 +12,18 @@ body {
   flex-direction: column;
   max-width: 1100px;
   min-width: 1000px;
-  height:1400px;
+  height:auto;
   box-shadow: 0px 0px 4px 1px #D3D3D3;
   background-color: #F6F6F6;
+  font-family: 'Ubuntu', sans-serif;
 }
+
 .logoBox {
   display: flex;
   flex-direction: column;
   width: 1100px;
   height: 114px;
-  background-image: url('logo_bg3.png');
+  background-image: url('images/logo_bg3.png');
   background-size: auto;
   box-shadow: 0px 0px 4px 1px #ffffff;
 }
@@ -47,13 +49,50 @@ body {
   color: white;
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
   padding-left: 100px;
   padding-right: 100px;
   font-size: 12px;
-  padding-left: 100px;
-  padding-right: 100px;
 
+
+}
+.signinbar {
+  width:30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 30px;
+}
+
+.signinbar > a {
+  color:white;
+  text-decoration: none;
+}
+
+
+.signinbar > input {
+    width: 100px;
+    font-size: 10px;
+    height: 22px;
+    margin-top: -2px;
+    border-bottom: none;
+
+}
+.signinbar > input[type=text]:focus {
+    width: 100px;
+
+}
+
+.menuItems {
+  padding-left: 360px;
+  align-items: flex-end;
+  width: 70%;
+  justify-content: space-around;
+  display: flex;
+  line-height: 30px;
+}
+.menuItems > a {
+  color:white;
+  text-decoration: none;
 }
 
 .mainContainer {
@@ -62,7 +101,7 @@ body {
   width:1100px;
   height: 500px;
   min-width: 1000px;
-  background-image: url('logo_center.png');
+  background-image: url('images/logo_center.png');
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -2px;
@@ -70,14 +109,24 @@ body {
 }
 h1 {
   font-size: 35px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #EF466A;
   font-weight: normal;
-
+  width:145px;
 }
-.leftContent {
-  width: 600px;
-  font-size: 20px;
+.leftContent > button {
+  background-color: #EF466A;
+  border-radius: 4px;
+  width: 75px;
   color: black;
+}
+
+.leftContent {
+  padding-left: 100px;
+  padding-top: 25px;
+  width: 600px;
+  font-size: 17px;
+  color: black;
+  padding-right: 75px;
 }
 
 .rightContent {
@@ -87,12 +136,17 @@ h1 {
   flex-wrap: wrap;
 
 }
+.ribbon {
+  background-color: #414042;
+  width: 1100px;
+  height: 30px;
+}
 .bottomContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #414042;
+  background-color: black;
   width: 1100px;
   min-width: 1000px;
 }
@@ -100,7 +154,7 @@ h1 {
   line-height: 250px;
   text-align: center;
   text-outline: 2px 2px #ffffff;
-  background-color: inherit;
+  background-image: url('images/square_field.png');
   height: 250px;
   width:250px;
 
@@ -110,7 +164,7 @@ h1 {
   vertical-align: middle;
   text-align: center;
   text-outline: 2px 2px #ffffff;
-  background-image: url('square_road.png');
+  background-image: url('images/square_road.png');
   height: 250px;
   width:250px;
 }
@@ -118,7 +172,7 @@ h1 {
 
   text-align: center;
   text-outline: 2px 2px #ffffff;
-  background-image: url('square_dog.png');
+  background-image: url('images/square_dog.png');
   height: 250px;
   width:250px;
 }
@@ -128,5 +182,59 @@ h1 {
   text-outline: 2px 2px #ffffff;
   height: 250px;
   width:250px;
-  background-image: url('square_city.png');
+  background-image: url('images/square_city.png');
+}
+.signup {
+  background-color: black;
+  height:700px;
+  width: 1100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 300px;
+  border-bottom: 2px solid #EF466A;
+  height: 30px;
+  font-size: 14px;
+
+}
+input[type=text]:focus {
+    width: 300px;
+
+}
+h2 {
+  font-size: 30px;
+}
+input[name="Bio"]{
+  height:250px;
+  width:300px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+input[name="First Name"]{
+  border-bottom: none;
+}
+input[name="Email"]{
+  border-bottom: none;
+}
+
+.signup > button {
+  background-color: #EF466A;
+  border-radius: 4px;
+  width: 75px;
+  color: black;
+  font-weight: bolder;
+}
+
+.homeView {
+  background-image: url('images/home_bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width:1100px;
+  height:600px;
+  opacity: .9;
 }

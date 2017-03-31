@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='designApp'>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,700i" rel="stylesheet">
+
+    <title>ShareSpace</title>
   </head>
-  <body>
+  <body ng-controller='mainController'>
     <div class='logoBox'>
       <div class='topBar'>
-
       </div>
       <div class='topNav'>
-        <a>Sign in</a>
-        <a>Home</a><p></p><p></p><p></p><p></p><p></p><p></p>
-        <a>Explore</a>
-        <a>Groups</a>
-        <a>About</a>
-
-
+        <div class='signinbar'>
+        <input type='text' name="Email" placeholder="Email"></br>
+        <input type='text' name="Email" placeholder="password"></br>
+        <a ui-sref='home'>Sign in</a>
+      </div>
+      <div class='menuItems'>
+        <a ui-sref='explore'>Explore</a>
+        <a ui-sref='groups'>Groups</a>
+        <a ui-sref='about'>About</a>
+      </div>
       </div>
   </div>
 
-    <div class='mainContainer'>
-    <div class='leftContent'>
-      <h1><strong>SHARE</strong> YOUR PASSION</h1>
+  <ui-view></ui-view>
 
-      <p>Join Groups and build a community</p>
-      <p>
-    </div>
-    <div class='rightContent'></div>
-  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/service.js"></script>
 
-  <div class='bottomContainer'>
-    <div class='leftContent'></div>
-    <div class='rightContent'>
-  <div class='square1'>Sign up</div>
-  <div class='square2'>Something</div>
-  <div class='square3'>Explore</div>
-  <div class='square4'>About</div>
-</div>
-  </div>
+
   </body>
 </html>

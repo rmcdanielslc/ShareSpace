@@ -1,4 +1,4 @@
-angular.module('socialApp').service('myService',function($http){
+angular.module('designApp').service('myService',function($http){
 this.getUsers = function() {
   return $http ({
   method: 'GET',

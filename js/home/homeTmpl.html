@@ -1,3 +1,21 @@
+
 <div class='homeView'>
-  
+  <div class='homeLeft'>
+    <img src="{{defaultUser.image.Url}}">
+  <p>firstName lastName</p>
+
+  <p>Location</p></br>
+  <p>bio</p>
+
+
+  <button ng-click='toggleSettings('updateSettings')'>Change Email or Password</button>
+  <input ng-class="{selected: updateSettings}" ng-show='updateSettings' type="text" name="Email" placeholder="Email">
+  <input ng-class="{selected: updateSettings}" ng-show='updateSettings' type="text" name="Password" placeholder="Password">
+  </div>
+  <div class='homeRight'>
+  <p>My Portfolio</p>
+  <p>{{defaultUser.images}}</p>
+
+
+  </div>
 </div>

@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   width: 1100px;
   height: 114px;
-  background-image: url('images/logo_bg3.png');
+  background-image: url('images/logo_bg2.png');
   background-size: auto;
   box-shadow: 0px 0px 4px 1px #ffffff;
 }
@@ -137,7 +137,7 @@ h1 {
 
 }
 .ribbon {
-  background-color: #414042;
+  background-color: black;
   width: 1100px;
   height: 30px;
 }
@@ -150,93 +150,5 @@ h1 {
   width: 1100px;
   min-width: 1000px;
   height:500px;
-  background-image: url('images/body_bg.png');
-}
-.square1 {
-  line-height: 250px;
-  text-align: center;
-  text-outline: 2px 2px #ffffff;
-  background-image: url('images/square_field.png');
-  height: 250px;
-  width:250px;
-
-}
-.square2 {
-  background-color: inherit;
-  vertical-align: middle;
-  text-align: center;
-  text-outline: 2px 2px #ffffff;
-  background-image: url('images/square_road.png');
-  height: 250px;
-  width:250px;
-}
-.square3 {
-
-  text-align: center;
-  text-outline: 2px 2px #ffffff;
-  background-image: url('images/square_dog.png');
-  height: 250px;
-  width:250px;
-}
-.square4 {
-  background-color: green;
-  text-align: center;
-  text-outline: 2px 2px #ffffff;
-  height: 250px;
-  width:250px;
-  background-image: url('images/square_city.png');
-}
-.signup {
-  background-color: black;
-  height:700px;
-  width: 1100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  font-size: 18px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-input {
-  width: 300px;
-  border-bottom: 2px solid #EF466A;
-  height: 30px;
-  font-size: 14px;
-
-}
-input[type=text]:focus {
-    width: 300px;
-
-}
-h2 {
-  font-size: 30px;
-}
-input[name="Bio"]{
-  height:250px;
-  width:300px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-input[name="First Name"]{
-  border-bottom: none;
-}
-input[name="Email"]{
-  border-bottom: none;
-}
-
-.signup > button {
-  background-color: #EF466A;
-  border-radius: 4px;
-  width: 75px;
-  color: black;
-  font-weight: bolder;
-}
-
-.homeView {
-  background-image: url('images/home_bg.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  width:1100px;
-  height:600px;
-  opacity: .9;
+  background-image: url('images/body_bg5.png');
 }

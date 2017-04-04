@@ -144,11 +144,38 @@ h1 {
 .bottomContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   background-color: black;
   width: 1100px;
   min-width: 1000px;
   height:500px;
-  background-image: url('images/body_bg5.png');
+}
+.tile1 {
+  height: 500px;
+  width: 275px;
+  background-image: url('images/tile_hand.png');
+  text-align: center;
+  color:white;
+}
+.tile2 {
+  height: 500px;
+  width: 275px;
+  background-image: url('images/tile_crayon.png');
+  text-align: center;
+  color:white;
+}
+.tile3 {
+  height: 500px;
+  width: 275px;
+  background-image: url('images/tile_group.png');
+  text-align: center;
+  color:white;
+}
+.tile4 {
+  height: 500px;
+  width: 275px;
+  background-image: url('images/tile_camera.png');
+  text-align: center;
+  color:white;
 }

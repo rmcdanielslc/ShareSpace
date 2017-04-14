@@ -1,0 +1,85 @@
+<div class='groupsContainer'>
+
+<div class='createPane'>
+  <h1><strong>CREATE</strong> A GROUP AND START SHARING</h1>
+
+  <input ng-model="group.name" type="text" name="name" placeholder="Group Name"><br></br>
+  <input ng-model="group.objective" type="text" name="objective" placeholder="Group Objective">
+<br></br>
+  <input ng-model="group.image" type="text" name="image" placeholder="Background URL">
+  <br></br>
+
+  <button ng-click="createGroup(group); clearFieldsGroup()">CREATE</button>
+</div>
+
+
+
+<div class='groupsPane'>
+  <form class="form-inline searchForm" role="form">
+    <div class="form-group">
+
+      <input style='margin-right:25px' class="form-control" placeholder="Search Group" ng-model="groupFilter.name">
+
+      <select class="input-medium" ng-model='sortProp'>
+        <option value="group.name">Name</option>
+        <option value="group.objective">Objective</option>
+      </select>
+      <select class="input-medium" ng-model='sortDirection'>
+        <option value="+">Descending</option>
+        <option value="-">Ascending</option>
+      </select>
+
+    </div>
+  </form>
+
+  <ul>
+  <li class='group' ng-repeat='group in groups | filter: groupFilter | orderBy: sortDirection + sortProp'>
+    <img class="group-pic" src='{{group.background}}'>
+
+    <h3>{{group.name}}</h3>
+    <p>Objective: {{group.objective}}</p>
+  </li>
+</ul>
+
+<button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+</button>
+    <span>{{currentPage+1}}/{{numberOfPages()}}</span>
+<button ng-disabled="currentPage >= groups.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+</button>
+
+</div>
+
+</div>
+
+
+
+<div class='learnRibbon'>
+  <div class='learnLeft'>
+  <h1><strong>FIND</strong> OUT MORE INFO HERE</h1>
+  <div ui-sref='about' class='learnButton'><p>LEARN MORE</p></div>
+</div>
+<div class='learnMiddle'><h1>BE <strong>SOCIAL</strong> AND SHARE</h1>
+
+  <div class="footer-social-icons">
+
+      <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+      </ul>
+  </div>
+
+
+
+
+</div>
+<div class='learnRight'><h1><strong>SEND</strong> US YOUR FEEDBACK</h1>
+    <div class='contactButton'><p>EMAIL HERE</p></div>
+</div>
+
+</div>

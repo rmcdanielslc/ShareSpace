@@ -2,10 +2,10 @@
 <div class='homeView'>
   <div class='homeLeft'>
     <img src="{{defaultUser.image.Url}}">
-  <p>firstName lastName</p>
+  <p>{{defaultUser.firstName}} {{defaultUser.lastName}}</p>
 
-  <p>Location</p></br>
-  <p>bio</p>
+  <p>{{defaultUser.location}}</p></br>
+  <p>{{defaultUser.bio}}</p>
 
 
   <button ng-click='toggleSettings('updateSettings')'>Change Email or Password</button>
@@ -14,8 +14,41 @@
   </div>
   <div class='homeRight'>
   <p>My Portfolio</p>
-  <p>{{defaultUser.images}}</p>
+  <p>{{defaultUser.projects}}</p>
 
 
   </div>
+</div>
+
+
+
+
+
+<div class='learnRibbon'>
+  <div class='learnLeft'>
+  <h1><strong>FIND</strong> OUT MORE INFO HERE</h1>
+  <div ui-sref='about' class='learnButton'><p>LEARN MORE</p></div>
+</div>
+<div class='learnMiddle'><h1>BE <strong>SOCIAL</strong> AND SHARE</h1>
+
+  <div class="footer-social-icons">
+
+      <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+      </ul>
+  </div>
+
+
+
+
+</div>
+<div class='learnRight'><h1><strong>SEND</strong> US YOUR FEEDBACK</h1>
+    <div class='contactButton'><p>EMAIL HERE</p></div>
+</div>
+
 </div>

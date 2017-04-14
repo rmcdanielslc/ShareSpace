@@ -1,14 +1,47 @@
 <div class="signup">
   <h2>Welcome to ShareSpace</h2><p>
     Sign up below</p>
-    <input ng-model="user.firstName" type="text" name="First Name" placeholder="First Name">
-    <input ng-model="user.lastName" type="text" name="Last Name" placeholder="Last Name">
+    <input ng-model="defaultUser.firstName" type="text" name="First Name" placeholder="First Name">
+    <input ng-model="defaultUser.lastName" type="text" name="Last Name" placeholder="Last Name">
   </br>
-    <input ng-model="user.email" type="text" name="Email" placeholder="Email">
-    <input ng-model="user.password" type="text" name="Password" placeholder="Password">
+    <input ng-model="defaultUser.email" type="text" name="Email" placeholder="Email">
+    <input ng-model="defaultUser.password" type="text" name="Password" placeholder="Password">
   </br>
-    <input ng-model="user.imageUrl" type="text" name="Profile Image" placeholder="Profile Image"></br>
-    <input ng-model="user.location" type="text" name="Location" placeholder="Location"></br>
-    <input ng-model="user.bio" type="text" name="Bio" placeholder="Bio"></br>
-    <button ng-click="createUser(user)">SAVE</button>
+    <input ng-model="defaultUser.imageUrl" type="text" name="Profile Image" placeholder="Profile Image"></br>
+    <input ng-model="defaultUser.location" type="text" name="Location" placeholder="Location"></br>
+    <input ng-model="defaultUser.bio" type="text" name="Bio" placeholder="Bio"></br>
+    <button ng-click="createUser(defaultUser); clearFields()">SAVE</button>
+</div>
+
+
+
+
+
+<div class='learnRibbon'>
+  <div class='learnLeft'>
+  <h1><strong>FIND</strong> OUT MORE INFO HERE</h1>
+  <div ui-sref='about' class='learnButton'><p>LEARN MORE</p></div>
+</div>
+<div class='learnMiddle'><h1>BE <strong>SOCIAL</strong> AND SHARE</h1>
+
+  <div class="footer-social-icons">
+
+      <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+      </ul>
+  </div>
+
+
+
+
+</div>
+<div class='learnRight'><h1><strong>SEND</strong> US YOUR FEEDBACK</h1>
+    <div class='contactButton'><p>EMAIL HERE</p></div>
+</div>
+
 </div>

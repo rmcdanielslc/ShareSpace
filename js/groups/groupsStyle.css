@@ -1,0 +1,66 @@
+.groupsContainer {
+  background-color: black;
+  width: 1100px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+}
+.createPane {
+  width:385px;
+  padding-left:25px;
+  background-image: url('/images/groups_bg.png');
+  background-size: auto;
+
+
+}
+.createPane > h1 {
+  font-size: 35px;
+  border-bottom: 2px solid #EF466A;
+  font-weight: normal;
+  width: 250px;
+  color:white;
+  font-weight: lighter;
+}
+
+.createPane > button {
+  background-color: #EF466A;
+  border-radius: 4px;
+  width: 75px;
+  color: white;
+  font-weight: bold;
+}
+
+.groupsPane {
+  width: 65%;
+  padding-top: 25px;
+  padding-right:25px;
+  background-color:black;
+  background-size: auto;
+  color:white;
+
+}
+.groupsPane > button {
+  margin-left: 40px;
+  width:60px;
+  background-color: #EF466A;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.form-group {
+  padding-left: 40px;
+}
+ .group {
+  background-color: #3E4042;
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  border-bottom: 2px solid #EF466A;
+  opacity: .8;
+}
+.group:hover {
+  opacity: 1;
+  cursor: pointer;
+}
